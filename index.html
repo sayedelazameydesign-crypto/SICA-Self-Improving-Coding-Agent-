@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gemini Function Calling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://esm.sh/@google/genai@^0.8.0"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Gemini Function Calling</h1>
+      <p>Ask a question that might use one of the available tools.</p>
+    </header>
+    <main id="chat-container">
+      <div id="messages"></div>
+      <div id="loading" class="hidden"><span></span></div>
+    </main>
+    <footer>
+      <form id="prompt-form">
+        <input type="text" id="prompt-input" placeholder="e.g., What's the weather in London?" autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </footer>
+  </div>
+  <script type="module" src="tools.tsx"></script>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>
