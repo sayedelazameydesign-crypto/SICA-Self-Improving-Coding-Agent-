@@ -1,5 +1,5 @@
 {
-  "name": "Copy of Function calling",
-  "description": "Provide Gemini with functions it can use to create responses",
+  "name": "SICA: Self-Improving Architectural Agent",
+  "description": "A Gemini-powered **Architectural Agent (SICA)** using Function Calling to implement a full Plan-Execute-Critique loop. It focuses on code efficiency, architectural best practices, and self-correction.",
   "requestFramePermissions": []
 }
